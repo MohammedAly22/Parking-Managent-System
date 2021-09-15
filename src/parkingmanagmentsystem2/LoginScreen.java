@@ -7,7 +7,9 @@ import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 public class LoginScreen extends javax.swing.JFrame {
-
+    //array to save number of cars reseved
+    public int[] nums = new int[20];
+    
     public String adminName;
     public String CustomerName;
     public String operatorName;
@@ -282,9 +284,24 @@ public class LoginScreen extends javax.swing.JFrame {
                         }
                         CustomerName = uname;
                         CustomerMenu.setCustomerName(CustomerName);
-                        CustomerMenu cm = new CustomerMenu();
-                        cm.show();
-                        this.dispose();
+                        try {
+                            int i = 0;
+                            int num = 0;
+                            Statement stt = c.createStatement();
+                            String sq = "select * from reservedcars";
+                            ResultSet r = stt.executeQuery(sq);
+                            while(r.next()){
+                                num = r.getInt("carNum");
+                                nums[i] = num;
+                                ++i;
+                            }
+                            CustomerMenu cm = new CustomerMenu();
+                            cm.show();
+                            CustomerMenu.getCarNumber(nums ,20);
+                            this.dispose();
+                        } catch (SQLException ex) {
+                            Logger.getLogger(OperatorMenu.class.getName()).log(Level.SEVERE, null, ex);
+                        }
                     }
                     else
                         JOptionPane.showMessageDialog(null, "Invalid username or password for a Customer" , "Error Message" , JOptionPane.ERROR_MESSAGE);

@@ -181,8 +181,7 @@ public class AdminMenu extends javax.swing.JFrame {
             LoginScreen ls = new LoginScreen();
             ls.show();
             this.dispose();
-        }
-            
+        }     
     }//GEN-LAST:event_logoutBtnActionPerformed
 
     private void ViewReservedSlotsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewReservedSlotsActionPerformed

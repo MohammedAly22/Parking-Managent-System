@@ -10,14 +10,86 @@ public class CustomerMenu extends javax.swing.JFrame {
     static String customerName;
     static int selectedCar = 0;
     static int id = 0;
+    
     public CustomerMenu() {
         initComponents();
     }
+    
     public static void setCustomerName(String name){
         customerName = name;
     }
+    
     public static void setCustomerId(int i){
         id = i;
+    }
+    
+    public static void getCarNumber(int[] arr , int length){
+        for(int j = 0 ; j < length ; j++){
+            switch(arr[j]){
+                case 0:
+                    break;
+                case 1:
+                    car1.setBackground(Color.red);
+                    break;
+                case 2:
+                    Car2.setBackground(Color.red);
+                    break;
+                case 3:
+                    car3.setBackground(Color.red);
+                    break;
+                case 4:
+                    car4.setBackground(Color.red);
+                    break;
+                case 5:
+                    car5.setBackground(Color.red);
+                    break;
+                case 6:
+                    car6.setBackground(Color.red);
+                    break;
+                case 7:
+                    car7.setBackground(Color.red);
+                    break;
+                case 8:
+                    car8.setBackground(Color.red);
+                    break;
+                case 9:
+                    car9.setBackground(Color.red);
+                    break;
+                case 10:
+                    car10.setBackground(Color.red);
+                    break;
+                case 11:
+                    car11.setBackground(Color.red);
+                    break;
+                case 12:
+                    car12.setBackground(Color.red);
+                    break;
+                case 13:
+                    car13.setBackground(Color.red);
+                    break;
+                case 14:
+                    car14.setBackground(Color.red);
+                    break;
+                case 15:
+                    car15.setBackground(Color.red);
+                    break;
+                case 16:
+                    car16.setBackground(Color.red);
+                    break;
+                case 17:
+                    car17.setBackground(Color.red);
+                    break;
+                case 18:
+                    car18.setBackground(Color.red);
+                    break;
+                case 19:
+                    car19.setBackground(Color.red);
+                    break;
+                case 20:
+                    car20.setBackground(Color.red);
+                    break;
+            }
+        }
     }
     public static int getSelectedCar(){
         if(car1.isSelected())
@@ -521,117 +593,193 @@ public class CustomerMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_car1ComponentAdded
 
     private void car1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_car1MouseClicked
-        selectedCar = 1;
-        parkingReservationForm pf = new parkingReservationForm();
-        pf.show();
+        if(car1.getBackground() != Color.red){
+            selectedCar = 1;
+            parkingReservationForm pf = new parkingReservationForm();
+            pf.show(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "another one is parking here" , "Error Message"  ,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_car1MouseClicked
 
     private void Car2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Car2MouseClicked
-        selectedCar = 2;
-        parkingReservationForm pf = new parkingReservationForm();
-        pf.show();
+        if(Car2.getBackground() != Color.red){
+            selectedCar = 2;
+            parkingReservationForm pf = new parkingReservationForm();
+            pf.show(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "another one is parking here" , "Error Message"  ,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_Car2MouseClicked
 
     private void car3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_car3MouseClicked
-        selectedCar = 3;
-        parkingReservationForm pf = new parkingReservationForm();
-        pf.show();
+        if(car3.getBackground() != Color.red){
+            selectedCar = 3;
+            parkingReservationForm pf = new parkingReservationForm();
+            pf.show(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "another one is parking here" , "Error Message"  ,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_car3MouseClicked
 
     private void car4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_car4MouseClicked
-        selectedCar = 4;
-        parkingReservationForm pf = new parkingReservationForm();
-        pf.show();
+        if(car4.getBackground() != Color.red){
+            selectedCar = 4;
+            parkingReservationForm pf = new parkingReservationForm();
+            pf.show(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "another one is parking here" , "Error Message"  ,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_car4MouseClicked
 
     private void car5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_car5MouseClicked
-        selectedCar = 5;
-        parkingReservationForm pf = new parkingReservationForm();
-        pf.show();
+        if(car5.getBackground() != Color.red){
+            selectedCar = 5;
+            parkingReservationForm pf = new parkingReservationForm();
+            pf.show(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "another one is parking here" , "Error Message"  ,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_car5MouseClicked
 
     private void car6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_car6MouseClicked
-        selectedCar = 6;
-        parkingReservationForm pf = new parkingReservationForm();
-        pf.show();
+        if(car6.getBackground() != Color.red){
+            selectedCar = 6;
+            parkingReservationForm pf = new parkingReservationForm();
+            pf.show(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "another one is parking here" , "Error Message"  ,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_car6MouseClicked
 
     private void car7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_car7MouseClicked
-        selectedCar = 7;
-        parkingReservationForm pf = new parkingReservationForm();
-        pf.show();
+        if(car7.getBackground() != Color.red){
+            selectedCar = 7;
+            parkingReservationForm pf = new parkingReservationForm();
+            pf.show(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "another one is parking here" , "Error Message"  ,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_car7MouseClicked
 
     private void car8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_car8MouseClicked
-        selectedCar = 8;
-        parkingReservationForm pf = new parkingReservationForm();
-        pf.show();
+        if(car8.getBackground() != Color.red){
+            selectedCar = 8;
+            parkingReservationForm pf = new parkingReservationForm();
+            pf.show(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "another one is parking here" , "Error Message"  ,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_car8MouseClicked
 
     private void car9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_car9MouseClicked
-        selectedCar = 9;
-        parkingReservationForm pf = new parkingReservationForm();
-        pf.show();
+        if(car9.getBackground() != Color.red){
+            selectedCar = 9;
+            parkingReservationForm pf = new parkingReservationForm();
+            pf.show(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "another one is parking here" , "Error Message"  ,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_car9MouseClicked
 
     private void car10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_car10MouseClicked
-        selectedCar = 10;
-        parkingReservationForm pf = new parkingReservationForm();
-        pf.show();
+        if(car10.getBackground() != Color.red){
+            selectedCar = 10;
+            parkingReservationForm pf = new parkingReservationForm();
+            pf.show(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "another one is parking here" , "Error Message"  ,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_car10MouseClicked
 
     private void car11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_car11MouseClicked
-        selectedCar = 11;
-        parkingReservationForm pf = new parkingReservationForm();
-        pf.show();
+        if(car11.getBackground() != Color.red){
+            selectedCar = 11;
+            parkingReservationForm pf = new parkingReservationForm();
+            pf.show(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "another one is parking here" , "Error Message"  ,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_car11MouseClicked
 
     private void car12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_car12MouseClicked
-        selectedCar = 12;
-        parkingReservationForm pf = new parkingReservationForm();
-        pf.show();
+        if(car12.getBackground() != Color.red){
+            selectedCar = 12;
+            parkingReservationForm pf = new parkingReservationForm();
+            pf.show(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "another one is parking here" , "Error Message"  ,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_car12MouseClicked
 
     private void car13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_car13MouseClicked
-        selectedCar = 13;
-        parkingReservationForm pf = new parkingReservationForm();
-        pf.show();
+        if(car13.getBackground() != Color.red){
+            selectedCar = 13;
+            parkingReservationForm pf = new parkingReservationForm();
+            pf.show(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "another one is parking here" , "Error Message"  ,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_car13MouseClicked
 
     private void car14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_car14MouseClicked
-        selectedCar = 14;
-        parkingReservationForm pf = new parkingReservationForm();
-        pf.show();
+        if(car14.getBackground() != Color.red){
+            selectedCar = 14;
+            parkingReservationForm pf = new parkingReservationForm();
+            pf.show(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "another one is parking here" , "Error Message"  ,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_car14MouseClicked
 
     private void car15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_car15MouseClicked
-        selectedCar = 15;
-        parkingReservationForm pf = new parkingReservationForm();
-        pf.show();
+        if(car15.getBackground() != Color.red){
+            selectedCar = 15;
+            parkingReservationForm pf = new parkingReservationForm();
+            pf.show(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "another one is parking here" , "Error Message"  ,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_car15MouseClicked
 
     private void car16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_car16MouseClicked
-        selectedCar = 16;
-        parkingReservationForm pf = new parkingReservationForm();
-        pf.show();
+        if(car16.getBackground() != Color.red){
+            selectedCar = 16;
+            parkingReservationForm pf = new parkingReservationForm();
+            pf.show(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "another one is parking here" , "Error Message"  ,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_car16MouseClicked
 
     private void car17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_car17MouseClicked
-        selectedCar = 17;
-        parkingReservationForm pf = new parkingReservationForm();
-        pf.show();
+        if(car17.getBackground() != Color.red){
+            selectedCar = 17;
+            parkingReservationForm pf = new parkingReservationForm();
+            pf.show(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "another one is parking here" , "Error Message"  ,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_car17MouseClicked
 
     private void car18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_car18MouseClicked
-        selectedCar = 18;
-        parkingReservationForm pf = new parkingReservationForm();
-        pf.show();
+        if(car18.getBackground() != Color.red){
+            selectedCar = 18;
+            parkingReservationForm pf = new parkingReservationForm();
+            pf.show(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "another one is parking here" , "Error Message"  ,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_car18MouseClicked
 
     private void car19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_car19MouseClicked
-        selectedCar = 19;
-        parkingReservationForm pf = new parkingReservationForm();
-        pf.show();
+        if(car19.getBackground() != Color.red){
+            selectedCar = 19;
+            parkingReservationForm pf = new parkingReservationForm();
+            pf.show(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "another one is parking here" , "Error Message"  ,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_car19MouseClicked
 
     private void car20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_car20ActionPerformed
@@ -639,9 +787,13 @@ public class CustomerMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_car20ActionPerformed
 
     private void car20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_car20MouseClicked
-        selectedCar = 20;
-        parkingReservationForm pf = new parkingReservationForm();
-        pf.show();
+        if(car20.getBackground() != Color.red){
+            selectedCar = 20;
+            parkingReservationForm pf = new parkingReservationForm();
+            pf.show(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "another one is parking here" , "Error Message"  ,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_car20MouseClicked
 
     /**
